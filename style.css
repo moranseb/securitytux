@@ -1,7 +1,3 @@
-.navbar {
-  background-color: #0e4a92;
-}
-
 .row.content {
   padding: 1.3rem;
 }
@@ -13,13 +9,6 @@
 
 a {
   color: inherit;
-}
-
-.content1 {
-  padding: 10px 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
 }
 
 .multi-collapse {
