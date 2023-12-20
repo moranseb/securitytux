@@ -1,53 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Security Tux</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Security Tux</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Security Tux</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Start Here</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="privacy.html">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid text-center">
+      <div class="row content">
+        <div class="col-sm-8 text-left">
+          <h1>Starting Point</h1>
+          <p>
+            Completing the following guides will give you a basic understanding
+            of personal cyber security, and give you the tools to stay safe
+            online
+          </p>
+          <hr />
 
-<nav class="navbar navbar-dark">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a style="color: white;" class="navbar-brand" href="#">Security Tux</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a style="color: white;" href="index.html">Home</a></li>
-        <li class="active"><a style="color: white;" href="starthere.html">Start Here</a></li>
-        <li><a style="color: white;" href="privacy.html">Privacy</a></li>
-        <li><a style="color: white;" href="#">Support</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-  
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-8 text-left"> 
-      <h1>Starting Point</h1>
-      <p>Completing the following guides will give you a basic understanding of personal cyber security, and give you the tools to stay safe online</p>
-      <hr>
-
-        <div class="guides">
+          <div class="guides">
             <a href="guides/threats.html">Understanding Threats</a>
-        </div>
-        <div class="guides">
+          </div>
+          <div class="guides">
             <a href="guides/onlineaccounts.html">Securing Online Accounts</a>
-        </div>
-        <div class="guides">
+          </div>
+          <div class="guides">
             <a href="guides/onlinepayments.html">Online Payments</a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>

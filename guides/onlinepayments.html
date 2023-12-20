@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Security Tux</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="../style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Security Tux</title>
   </head>
   <body>
-    <nav class="navbar navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target="#myNavbar"
-          >
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a style="color: white" class="navbar-brand" href="#">Security Tux</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a style="color: white" href="../index.html">Home</a></li>
-            <li class="active">
-              <a style="color: white" href="../starthere.html">Start Here</a>
+        <a class="navbar-brand" href="../index.html">Security Tux</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
             </li>
-            <li><a style="color: white" href="../privacy.html">Privacy</a></li>
-            <li><a style="color: white" href="#">Support</a></li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../starthere.html"
+                >Start Here</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../privacy.html">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -43,106 +52,128 @@
 
     <div class="container-fluid text-center">
       <div class="row content">
-        <div class="col-md-8 text-left">
+        <div class="col-md-8">
           <h1>Online Payments</h1>
           <p>
             Click through the sections below to learn about how to stay safe
             when shopping online.
           </p>
           <hr />
-
-          <button type="button" class="collapsible">How it Happens</button>
-          <div class="content1 text-left">
-            <p>
-              There are a few ways your credit card information can be stolen.
-              First, your device that you use to shop online can be compromised.
-              Credential and information stealing malware can steal your credit
-              card number if you have it saved in your browser, or if you make a
-              purchase while infected. Make sure whatever device you use to shop
-              online is secure and free of malware. Also, don't visit sketchy
-              sites from the same device you use to shop. Use a Virtual Machine
-              if you absolutely have to visit a site you don't trust, but it's
-              better to avoid them all together.
-            </p>
-            <p>
-              Second, your credit card infomation can be involved in a breach.
-              If a website you've shopped at is breached, your payment
-              information could be compromised. To avoid this, use virtual cards
-              from privacy.com. See more on this in the next section. These
-              breaches happen most often to smaller, outdated websites. You are
-              very unlikely to have your credit card compromised because a big
-              company you shop at like Amazon was breached. Because of this,
-              avoid entering your payment information into sites you don't
-              trust. Some smaller sites may use third party payment processors.
-              This is usually safe.
-            </p>
-            <p>
-              Third, an account where your credit card information is saved
-              could be breached. If your Amazon account is breach, for example
-              because you use a password you've used elsewhere, an attacker may
-              be able to steal your payment information from your account. To
-              avoid this, make sure any accounts where you save payment
-              information are secured with strong passwords and 2FA.
-            </p>
-            <p>
-              Last, your payment information could be stolen by a credit card
-              skimmer. These are physical devices that criminals attach to
-              payment terminals, especially at gas stations. Before swiping your
-              card, you can pull hard on the payment terminal to make sure there
-              is no skimmer attached. If a payment terminal looks strange or
-              different from other ones around it, avoid using it. Skimmers are
-              placed over top of existing card terminals, so watch out of
-              particularly bulky or pertruding terminals. For more infomration
-              on spotting skimmers, check out this article:
-              <a
-                href="https://www.howtogeek.com/193958/atm-skimmers-explained-how-to-protect-your-atm-card/"
-                >https://www.howtogeek.com/193958/atm-skimmers-explained-how-to-protect-your-atm-card/</a
-              >.
-            </p>
+          <p>
+            <a
+              class="btn btn-primary"
+              data-bs-toggle="collapse"
+              href="#multiCollapse1"
+              role="button"
+              aria-expanded="false"
+              aria-controls="multiCollapse1"
+              >How it Happens</a
+            >
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapse1">
+                <div class="card card-body text-start">
+                  <p>
+                    There are a few ways your credit card information can be
+                    stolen. First, your device that you use to shop online can
+                    be compromised. Credential and information stealing malware
+                    can steal your credit card number if you have it saved in
+                    your browser, or if you make a purchase while infected. Make
+                    sure whatever device you use to shop online is secure and
+                    free of malware. Also, don't visit sketchy sites from the
+                    same device you use to shop. Use a Virtual Machine if you
+                    absolutely have to visit a site you don't trust, but it's
+                    better to avoid them all together.
+                  </p>
+                  <p>
+                    Second, your credit card infomation can be involved in a
+                    breach. If a website you've shopped at is breached, your
+                    payment information could be compromised. To avoid this, use
+                    virtual cards from privacy.com. See more on this in the next
+                    section. These breaches happen most often to smaller,
+                    outdated websites. You are very unlikely to have your credit
+                    card compromised because a big company you shop at like
+                    Amazon was breached. Because of this, avoid entering your
+                    payment information into sites you don't trust. Some smaller
+                    sites may use third party payment processors. This is
+                    usually safe.
+                  </p>
+                  <p>
+                    Third, an account where your credit card information is
+                    saved could be breached. If your Amazon account is breach,
+                    for example because you use a password you've used
+                    elsewhere, an attacker may be able to steal your payment
+                    information from your account. To avoid this, make sure any
+                    accounts where you save payment information are secured with
+                    strong passwords and 2FA.
+                  </p>
+                  <p>
+                    Last, your payment information could be stolen by a credit
+                    card skimmer. These are physical devices that criminals
+                    attach to payment terminals, especially at gas stations.
+                    Before swiping your card, you can pull hard on the payment
+                    terminal to make sure there is no skimmer attached. If a
+                    payment terminal looks strange or different from other ones
+                    around it, avoid using it. Skimmers are placed over top of
+                    existing card terminals, so watch out of particularly bulky
+                    or pertruding terminals. For more infomration on spotting
+                    skimmers, check out this article:
+                    <a
+                      href="https://www.howtogeek.com/193958/atm-skimmers-explained-how-to-protect-your-atm-card/"
+                      >https://www.howtogeek.com/193958/atm-skimmers-explained-how-to-protect-your-atm-card/</a
+                    >.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <button type="button" class="collapsible">Virtual Cards</button>
-          <div class="content1 text-left">
-            <p>
-              Virtual cards, such as those offered by privacy.com, allow you to
-              generate multiple payment cards when shopping online. There are
-              various controls you can use when using these cards. You can
-              create "One time use" cards that close and decline all subsequent
-              transactions after being used, or you can have a card that will
-              lock to the first merchant it is used at. This means if you make a
-              card for Amazon shopping, after it is used at Amazon, it cannot be
-              used anywhere else. You can also set spend limits per week, month,
-              or year on each card. If this limit is exceeded, the card will
-              decline. These virtual cards help eliminate much of the risk from
-              online shopping. If you card is breached, hackers will not be able
-              to use it at other merchants. If it was a one time card, they
-              won't be able to use it at all, and if the card is still usable,
-              but has a limit, they will only be able to use it at the merchant
-              the card is locked to, and will not be able to exceed the limit
-              placed on the card. Additionally, these cards help lessen the
-              inconvenience of having payment information stolen. Instead of
-              cancelling you credit card and having to update your billing
-              information everywhere, you can cancel just the one virtual card
-              that was breached.
-            </p>
+
+          <p>
+            <a
+              class="btn btn-primary"
+              data-bs-toggle="collapse"
+              href="#multiCollapse2"
+              role="button"
+              aria-expanded="false"
+              aria-controls="multiCollapse2"
+              >Virtual Cards</a
+            >
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapse2">
+                <div class="card card-body text-start">
+                  <p>
+                    Virtual cards, such as those offered by
+                    <a href="https://privacy.com">privacy.com</a>, allow you to
+                    generate multiple payment cards when shopping online. There
+                    are various controls you can use when using these cards. You
+                    can create "One time use" cards that close and decline all
+                    subsequent transactions after being used, or you can have a
+                    card that will lock to the first merchant it is used at.
+                    This means if you make a card for Amazon shopping, after it
+                    is used at Amazon, it cannot be used anywhere else. You can
+                    also set spend limits per week, month, or year on each card.
+                    If this limit is exceeded, the card will decline. These
+                    virtual cards help eliminate much of the risk from online
+                    shopping. If you card is breached, hackers will not be able
+                    to use it at other merchants. If it was a one time card,
+                    they won't be able to use it at all, and if the card is
+                    still usable, but has a limit, they will only be able to use
+                    it at the merchant the card is locked to, and will not be
+                    able to exceed the limit placed on the card. Additionally,
+                    these cards help lessen the inconvenience of having payment
+                    information stolen. Instead of cancelling you credit card
+                    and having to update your billing information everywhere,
+                    you can cancel just the one virtual card that was breached.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-      }
-    </script>
   </body>
 </html>

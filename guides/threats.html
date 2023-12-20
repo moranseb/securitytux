@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Security Tux</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="../style.css" />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Security Tux</title>
   </head>
   <body>
-    <nav class="navbar navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target="#myNavbar"
-          >
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a style="color: white" class="navbar-brand" href="#">Security Tux</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a style="color: white" href="../index.html">Home</a></li>
-            <li class="active">
-              <a style="color: white" href="../starthere.html">Start Here</a>
+        <a class="navbar-brand" href="../index.html">Security Tux</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
             </li>
-            <li><a style="color: white" href="../privacy.html">Privacy</a></li>
-            <li><a style="color: white" href="#">Support</a></li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../starthere.html"
+                >Start Here</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../privacy.html">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -42,7 +49,7 @@
 
     <div class="container-fluid text-center">
       <div class="row content">
-        <div class="col-md-8 text-left">
+        <div class="col-md-8">
           <h1>Understanding Online Threats</h1>
           <p>
             Staying safe online requires understanding the basic threats you
@@ -53,171 +60,227 @@
             about each type of threat.
           </p>
           <hr />
+          <p>
+            <a
+              class="btn btn-primary"
+              data-bs-toggle="collapse"
+              href="#multiCollapse1"
+              role="button"
+              aria-expanded="false"
+              aria-controls="multiCollapse1"
+              >Malware</a
+            >
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapse1">
+                <div class="card card-body">
+                  <p class="text-start">
+                    The impact of malware depends on the type of malware, and
+                    can range from slowing down your computer to stealing
+                    passwords and credit card numbers to encrypting your files
+                    and demanding a ransom to decrypt them. At the end of the
+                    day, you cannot operate securely online if the device you
+                    use is compromised.
+                  </p>
+                  <p class="text-start">
+                    While antivirus solutions can help detect and clean up
+                    infections after they happen, the best approach is to avoid
+                    infections in the first place. To do this, avoid visiting
+                    untrusted websites; websites like movie and music privacy
+                    sites, or other illegal sites should be avoided as they have
+                    been known to distribute malware. If you do need to visit a
+                    site that you don't trust, do so in a virtual machine. If a
+                    website downloads a file unexpectedly, close the website,
+                    delete the file, and run an antivirus scan.
+                  </p>
+                  <p class="text-start">
+                    Additionally, do not download or open files that you don't
+                    trust. Be especially wary of files sent to you by email,
+                    check the senders email address before downloading any
+                    files, and do not download any files you are not expecting.
+                  </p>
+                  <p class="text-start">
+                    Regarding antivirus, Windows Defender comes with Windows,
+                    and is sufficient for that operating system. Sophos is one
+                    good option for Mac, or for Windows if something besides
+                    Windows Defender is desired. For Linux, ClamAV is a good
+                    option. Always use real antivirus. One of the most commonly
+                    types of pirated software is antivirus software. Usually,
+                    predicatbly, these pirated versions contain malware. If you
+                    don't want to pay for antivirus, it's much better not to
+                    install it at all than to install a pirated version.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <button type="button" class="collapsible">Malware</button>
-          <div class="content1 text-left">
-            <p>
-              The impact of malware depends on the type of malware, and can
-              range from slowing down your computer to stealing passwords and
-              credit card numbers to encrypting your files and demanding a
-              ransom to decrypt them. At the end of the day, you cannot operate
-              securely online if the device you use is compromised.
-            </p>
-            <p>
-              While antivirus solutions can help detect and clean up infections
-              after they happen, the best approach is to avoid infections in the
-              first place. To do this, avoid visiting untrusted websites;
-              websites like movie and music privacy sites, or other illegal
-              sites should be avoided as they have been known to distribute
-              malware. If you do need to visit a site that you don't trust, do
-              so in a virtual machine. If a website downloads a file
-              unexpectedly, close the website, delete the file, and run an
-              antivirus scan.
-            </p>
-            <p>
-              Additionally, do not download or open files that you don't trust.
-              Be especially wary of files sent to you by email, check the
-              senders email address before downloading any files, and do not
-              download any files you are not expecting.
-            </p>
-            <p>
-              Regarding antivirus, Windows Defender comes with Windows, and is
-              sufficient for that operating system. Sophos is one good option
-              for Mac, or for Windows if something besides Windows Defender is
-              desired. For Linux, ClamAV is a good option. Always use real
-              antivirus. One of the most commonly types of pirated software is
-              antivirus software. Usually, predicatbly, these pirated versions
-              contain malware. If you don't want to pay for antivirus, it's much
-              better not to install it at all than to install a pirated version.
-            </p>
+          <p>
+            <a
+              class="btn btn-primary"
+              data-bs-toggle="collapse"
+              href="#multiCollapse2"
+              role="button"
+              aria-expanded="false"
+              aria-controls="multiCollapse2"
+              >Phishing, Scam Pages, and Social Engineering</a
+            >
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapse2">
+                <div class="card card-body">
+                  <p class="text-start">
+                    Truly hacking most websites these days is very difficult.
+                    Users are often the weakest links, and hackers take
+                    advantage of this. Taking advantage of users' weaknesses
+                    rather than weaknesses in code or website design is called
+                    social engineering. Below are some of the most common ways
+                    users are tricked into giving hackers sensitive information.
+                    As general guidance, be extremely aware whenever you type or
+                    paste your password into a website, or enter authentication
+                    codes or personal information anywhere. Always check the
+                    URL, if it looks weird, don't enter your password. Don't
+                    ever give authentication codes, passwords, or personal
+                    information in text messages or over the phone to anyone.
+                    Hackers will often call or text victims and trick them into
+                    giving them sensitive information, for example by pretending
+                    to a bank employee. Do not fall for it, this a very common
+                    way for people to loose control of their accounts to
+                    hackers. Hackers will often use fear to help scare victims
+                    into providing this information. Watch out for this tactic.
+                  </p>
+                  <p class="text-start">
+                    Phishing is one of the most common ways of taking advantage
+                    of users. Hackers will use email, text messages, or phone
+                    calls to trick users into entering their credentials into
+                    fake websites (see the section on scam pages below) or into
+                    sending the hacker passwords or authentication codes over
+                    email, text, or by phone. Another trick is to try to get
+                    victims to buy gift cards, and send them to the hacker. For
+                    example, they may pretend to be your boss, or the pastor of
+                    your church, and ask you to buy gift cards for a urgent
+                    business need or a family in needs, and they will reimburse
+                    you later. Hackers can also get access to an account by
+                    using the "forgot password" function, which usually requires
+                    personal information as verification. They can then often
+                    trick victims into giving them this information by email,
+                    text, or phone. Never send codes, passwords, or personal
+                    information by text, phone, or email.
+                  </p>
+                  <p class="text-start">
+                    Scam pages are when hackers create a web page that looks
+                    like the login page of a legitimate website. For example,
+                    they may create a web page that looks like a bank login
+                    page. Then they send bank customers emails saying there is
+                    problem with their account, or someone has withdrawn a
+                    substantial amount of money, and ask them to sign in to
+                    verify the transaction, including a link to their fake bank
+                    website in the email. When the victim clicks on the link and
+                    enters their password, the password is sent to the hackers.
+                    Sometimes these pages will also ask for the code sent by
+                    text message to verify the log in, allowing the hacker to
+                    bypass this additional security check if the victim enters
+                    this code. To avoid falling for this scam, never click on
+                    links in emails. If your bank sends you an email and asks
+                    for action, navigate to the bank website directly, and log
+                    in from there. Do not use the link provided in the email.
+                    Before entering an email, carefully check the URL. Hackers
+                    will use URLs that look similar on first glace to the true
+                    URL. For example, instead of secure.bankofamerica.com a
+                    hacker might use secure.bankofamarica.com. Watch out for
+                    these URLs. Don't click links in emails or text messages.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <button type="button" class="collapsible">
-            Phishing, Scam Pages, and Social Engineering
-          </button>
-          <div class="content1 text-left">
-            <p>
-              Truly hacking most websites these days is very difficult. Users
-              are often the weakest links, and hackers take advantage of this.
-              Taking advantage of users' weaknesses rather than weaknesses in
-              code or website design is called social engineering. Below are
-              some of the most common ways users are tricked into giving hackers
-              sensitive information. As general guidance, be extremely aware
-              whenever you type or paste your password into a website, or enter
-              authentication codes or personal information anywhere. Always
-              check the URL, if it looks weird, don't enter your password. Don't
-              ever give authentication codes, passwords, or personal information
-              in text messages or over the phone to anyone. Hackers will often
-              call or text victims and trick them into giving them sensitive
-              information, for example by pretending to a bank employee. Do not
-              fall for it, this a very common way for people to loose control of
-              their accounts to hackers. Hackers will often use fear to help
-              scare victims into providing this information. Watch out for this
-              tactic.
-            </p>
-            <p>
-              Phishing is one of the most common ways of taking advantage of
-              users. Hackers will use email, text messages, or phone calls to
-              trick users into entering their credentials into fake websites
-              (see the section on scam pages below) or into sending the hacker
-              passwords or authentication codes over email, text, or by phone.
-              Another trick is to try to get victims to buy gift cards, and send
-              them to the hacker. For example, they may pretend to be your boss,
-              or the pastor of your church, and ask you to buy gift cards for a
-              urgent business need or a family in needs, and they will reimburse
-              you later. Hackers can also get access to an account by using the
-              "forgot password" function, which usually requires personal
-              information as verification. They can then often trick victims
-              into giving them this information by email, text, or phone. Never
-              send codes, passwords, or personal information by text, phone, or
-              email.
-            </p>
-            <p>
-              Scam pages are when hackers create a web page that looks like the
-              login page of a legitimate website. For example, they may create a
-              web page that looks like a bank login page. Then they send bank
-              customers emails saying there is problem with their account, or
-              someone has withdrawn a substantial amount of money, and ask them
-              to sign in to verify the transaction, including a link to their
-              fake bank website in the email. When the victim clicks on the link
-              and enters their password, the password is sent to the hackers.
-              Sometimes these pages will also ask for the code sent by text
-              message to verify the log in, allowing the hacker to bypass this
-              additional security check if the victim enters this code. To avoid
-              falling for this scam, never click on links in emails. If your
-              bank sends you an email and asks for action, navigate to the bank
-              website directly, and log in from there. Do not use the link
-              provided in the email. Before entering an email, carefully check
-              the URL. Hackers will use URLs that look similar on first glace to
-              the true URL. For example, instead of secure.bankofamerica.com a
-              hacker might use secure.bankofamarica.com. Watch out for these
-              URLs. Don't click links in emails or text messages.
-            </p>
+
+          <p>
+            <a
+              class="btn btn-primary"
+              data-bs-toggle="collapse"
+              href="#multiCollapse3"
+              role="button"
+              aria-expanded="false"
+              aria-controls="multiCollapse3"
+              >Credential Stuffing Attacks</a
+            >
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapse3">
+                <div class="card card-body">
+                  <p class="text-start">
+                    One of the most common ways passwords are compromised is
+                    credential stuffing attacks.
+                  </p>
+                  <p class="text-start">
+                    Databases containing username password combinations are
+                    obtained by hackers from by breaching websites, or because
+                    the databases are sometimes left unprotected. These hackers
+                    either sell the databases on the dark web, or use the data
+                    themselves. They test the username-password combinations
+                    from the database against other websites, this is called
+                    credential stuffing. Because users so often reuse usernames
+                    and passwords across multiple websites, credential stuffing
+                    results in a relatively large number of valid sets of
+                    credentials. The hacker can then sell these valid
+                    credentials, or take advantage of them themselves.
+                  </p>
+                  <p class="text-start">
+                    The two best means of protection against these attacks is
+                    two factor authentication and never reusing passwords. How
+                    to do this will be covered in the passwords and two factor
+                    authentication guides. It is also helpful to use different
+                    usernames or emails for different services, especially high
+                    value accounts such as bank accounts. This will also be
+                    covered in the passwords section.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <button type="button" class="collapsible">
-            Credential Stuffing Attacks
-          </button>
-          <div class="content1 text-left">
-            <p>
-              One of the most common ways passwords are compromised is
-              credential stuffing attacks.
-            </p>
-            <p>
-              Databases containing username password combinations are obtained
-              by hackers from by breaching websites, or because the databases
-              are sometimes left unprotected. These hackers either sell the
-              databases on the dark web, or use the data themselves. They test
-              the username-password combinations from the database against other
-              websites, this is called credential stuffing. Because users so
-              often reuse usernames and passwords across multiple websites,
-              credential stuffing results in a relatively large number of valid
-              sets of credentials. The hacker can then sell these valid
-              credentials, or take advantage of them themselves.
-            </p>
-            <p>
-              The two best means of protection against these attacks is two
-              factor authentication and never reusing passwords. How to do this
-              will be covered in the passwords and two factor authentication
-              guides. It is also helpful to use different usernames or emails
-              for different services, especially high value accounts such as
-              bank accounts. This will also be covered in the passwords section.
-            </p>
-          </div>
-          <button type="button" class="collapsible">Public WiFi</button>
-          <div class="content1 text-left">
-            <p>
-              Using public WiFi, especially for sensitive applications such as
-              banking, opens you up to potential attacks. People on the same
-              network, especially if the network is unsecured, can run attacks
-              such as SSL stripping attacks that can reveal credentials in plain
-              text. Because of this, when using public WiFi, consider using a
-              VPN. If you don't use a VPN, avoid logging in to any accounts
-              while on public WiFi, and avoid doing anything sensitive on the
-              public WiFi network. Additionally, do not use free VPNs, they make
-              money by selling data about your internet usage while you are
-              connected to the VPN. Instead, use a reputable, paid VPN service
-              like ProtonVPN, NordVPN, PIA, or ExpressVPN. ProtonVPN does have a
-              free tier, as a reputable, paid VPN provider, it is likely safe to
-              use if you require a free VPN.
-            </p>
+
+          <p>
+            <a
+              class="btn btn-primary"
+              data-bs-toggle="collapse"
+              href="#multiCollapse4"
+              role="button"
+              aria-expanded="false"
+              aria-controls="multiCollapse4"
+              >Public WiFi</a
+            >
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapse4">
+                <div class="card card-body">
+                  <p class="text-start">
+                    Using public WiFi, especially for sensitive applications
+                    such as banking, opens you up to potential attacks. People
+                    on the same network, especially if the network is unsecured,
+                    can run attacks such as SSL stripping attacks that can
+                    reveal credentials in plain text. Because of this, when
+                    using public WiFi, consider using a VPN. If you don't use a
+                    VPN, avoid logging in to any accounts while on public WiFi,
+                    and avoid doing anything sensitive on the public WiFi
+                    network. Additionally, do not use free VPNs, they make money
+                    by selling data about your internet usage while you are
+                    connected to the VPN. Instead, use a reputable, paid VPN
+                    service like ProtonVPN, NordVPN, PIA, or ExpressVPN.
+                    ProtonVPN does have a free tier, as a reputable, paid VPN
+                    provider, it is likely safe to use if you require a free
+                    VPN.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-      }
-    </script>
   </body>
 </html>
