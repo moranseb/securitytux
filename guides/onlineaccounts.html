@@ -52,7 +52,7 @@
 
     <div class="container-fluid text-center">
       <div class="row content">
-        <div class="col-md-8">
+        <div class="col-md-10">
           <h1>Securing Online Accounts</h1>
           <p>
             Click the sections below to learn about how to protect your online
@@ -75,20 +75,21 @@
               <div class="collapse multi-collapse" id="multiCollapse1">
                 <div class="card card-body text-start">
                   <p>
-                    An good password is one that you only use in one place, is
-                    long, and is as random as possible. This means is should not
-                    include dictionary words, it should have upper and lower
-                    case letters, symbols, and generally should be at least 15
-                    characters. Generating random passwords and remembering
-                    different passwords for every site where you have an account
-                    is impossible. To solve this problem, there are password
-                    managers. These are apps that are password protected that
-                    store all your other passwords. Because they contain all
-                    your other log in credentials, it is extremely important
-                    that you properly protect your password manager. This means
-                    using a strong, random password that you have never used
-                    anywhere else. You can use this site to generate a strong
-                    password for your password manager:
+                    For online accouts, passwords are usually your first line of
+                    defense. An good password is one that you only use in one
+                    place, is long, and is as random as possible. This means is
+                    should not include dictionary words, it should have upper
+                    and lower case letters, symbols, and generally should be at
+                    least 15 characters. Generating random passwords and
+                    remembering different passwords for every site where you
+                    have an account is impossible. To solve this problem, there
+                    are password managers. These are apps that are password
+                    protected that store all your other passwords. Because they
+                    contain all your other log in credentials, it is extremely
+                    important that you properly protect your password manager.
+                    This means using a strong, random password that you have
+                    never used anywhere else. You can use this site to generate
+                    a strong password for your password manager:
                     <a href="https://1password.com/password-generator/"
                       >https://1password.com/password-generator/</a
                     >. I recommend unchecking the "Full Words" box, and
@@ -133,6 +134,12 @@
                     there, they likely will have full access to most of your
                     online accounts.
                   </p>
+                  <p>
+                    It can also be helpful to use usernames or email addresses
+                    as pseudo-secondary passwords. Creating a fully randomized
+                    username or having a separate email used only for high value
+                    accounts can help increase these accounts' security.
+                  </p>
                 </div>
               </div>
             </div>
@@ -162,14 +169,16 @@
                     here in order from worst to best: SMS based, email based,
                     software based, and hardware based.
                   </p>
+                  <p><b>SMS Based</b></p>
                   <p>
                     SMS based 2FA uses a code sent to your phone that usually
                     expires in 5 to 10 minutes. SMS based 2FA is often used by
-                    banks, and is vulnerable to SIM swapping, and attack where a
-                    criminal takes over a victim's phone number. SIM swaps and
-                    compromised passwords are the source of many compromised
-                    bank accounts.
+                    banks, and is vulnerable to SIM swapping, which is an attack
+                    where a criminal takes over a victim's phone number. SIM
+                    swaps and compromised passwords are the source of many
+                    compromised bank accounts.
                   </p>
+                  <p><b>Email Based</b></p>
                   <p>
                     Email based 2FA uses codes sent to your email address. A
                     properly secured email account with a strong password and
@@ -181,28 +190,35 @@
                     service provider pretending to be their victim, and were
                     able to reset the victim's email account password. Using an
                     email provider like Protonmail that is security focused and
-                    employs zero knowledge encryption helps mitigate this risk
-                    greatly, as employees are less likely to be able or willing
-                    to reset an account's password. Using common email providers
-                    like Yahoo or Gmail for email based 2FA is not recommended.
+                    employs
+                    <a href="https://proton.me/blog/zero-access-encryption"
+                      >zero knowledge encryption</a
+                    >
+                    helps mitigate this risk greatly, as employees are less
+                    likely to be able or willing to reset an account's password.
+                    Using common email providers like Yahoo or Gmail for email
+                    based 2FA is not recommended.
                   </p>
+                  <p><b>Software Based</b></p>
                   <p>
-                    Software based 2FA uses a seed code and the time of day to
-                    create a six digit code that you enter into a website.
-                    Because the seed code is never entered into a website, and
-                    is often stored locally or in specially designed, secure
-                    applications, this method of 2FA is considered very secure.
-                    I highly recommend backing up your 2FA seed codes, however,
-                    often when you enable 2FA, the website will provide you with
-                    backup codes. In this case, backing up the seed code is not
-                    nessisary, add the backup codes to the notes section in your
-                    password manager. 1Password and Bitwarden paid tiers
-                    provides the option to save 2FA software codes in the app,
-                    and the app will generate verification codes. You can also
-                    just add the seed code in the notes section for a login as a
-                    backup, while using another app to generate verification
-                    codes. Regardless, you will also need a 2FA app specifically
-                    for your password manager. For a dedicated 2FA app, I would
+                    Software based 2FA uses a unique "seed code" together with
+                    the time of day to generate a six digit code that you enter
+                    into a website. This six digit code cannot be used to derive
+                    the seed code. Because the seed code is never entered into a
+                    website, and is often stored locally or in specially
+                    designed, secure applications, this method of 2FA is
+                    considered very secure. I highly recommend backing up your
+                    2FA seed codes, however, often when you enable 2FA, the
+                    website will provide you with backup codes. In this case,
+                    backing up the seed code is not necessary, add the backup
+                    codes to the notes section in your password manager.
+                    1Password and Bitwarden paid tiers provides the option to
+                    save 2FA software codes in the app, and the app will
+                    generate verification codes. You can also just add the seed
+                    code in the notes section for a login as a backup, while
+                    using another app to generate verification codes.
+                    Regardless, you will also need a 2FA app specifically for
+                    your password manager. For a dedicated 2FA app, I would
                     recommend Authy. I would avoid Google and Microsoft
                     Authenticator due to privacy concerns, but if you don't
                     share these concerns these apps also work well.
@@ -211,13 +227,17 @@
                     In the image below you can see a screenshot from enabling
                     2FA in bitwarden. The QR code would be scanned with an app
                     or a password manager. The alphanumeric code below the QR
-                    code is the seed code. If the site did not provide backup
-                    codes (bitwarden does), this seed code should be backed up
-                    in your password manager or another secure location, such as
-                    a thumb drive.
+                    code is the seed code (in the example below the seed code is
+                    in pink). If the site did not provide backup codes
+                    (bitwarden does), this seed code should be backed up in your
+                    password manager or another secure location, such as a thumb
+                    drive.
                   </p>
                   <img src="bitwarden2fa.png" alt="Bitwarden 2FA" />
                   <p style="padding-top: 2rem" class="text-start">
+                    <b>Hardware Based</b>
+                  </p>
+                  <p>
                     Hardware based 2FA uses a physical security key, often a USB
                     key that you plug into the computer to verify your identity.
                     These are considered the most secure method of 2FA. Yubico
@@ -277,11 +297,12 @@
                     absolutely.
                   </p>
                   <p>
-                    If storing your emergency kit digitally, after copying the
-                    information to a thumb drive, make sure the file is erased
-                    from your computer. This information should not be stored on
-                    any device connected to the internet, and it is easy to
-                    forget to delete the file after copying to a thumb drive.
+                    If you choose to store your emergency kit digitally, after
+                    copying the file to a thumb drive, make sure the file is
+                    erased from your computer. This information should not be
+                    stored on any device connected to the internet, and it is
+                    easy to forget to delete the file after copying to a thumb
+                    drive.
                   </p>
                   <p>
                     If you ever need to recover a 2FA code, all 2FA apps have an
@@ -412,6 +433,23 @@
                 </div>
               </div>
             </div>
+            <hr />
+            <p style="padding-left: 2rem; padding-right: 2rem">
+              <a
+                class="btn btn-primary"
+                role="button"
+                style="float: left"
+                href="../starthere.html"
+                >Back</a
+              >
+              <a
+                class="btn btn-primary"
+                role="button"
+                style="float: right"
+                href="onlinepayments.html"
+                >Next Section</a
+              >
+            </p>
           </div>
         </div>
       </div>
